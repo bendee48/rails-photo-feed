@@ -1,9 +1,14 @@
 <h1>Photo Feed</h1>
-
+<p>Enter your Flickr id to see your public photos.</p>
 <%= form_with url: root_path, method: :get, local: true do |f| %>
   <%= f.label 'flickr-id', 'Flickr ID' %>
   <%= f.text_field 'flickr-id' %>
   <%= f.submit 'Submit' %>
 <% end %>
+<br />
 
-<%= @user_photos %>
+<% if @user_photos %>
+  <% @user_photos.each do |url| %>
+    <%= image_tag url %>
+  <% end %>
+<% end %>

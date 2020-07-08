@@ -5,7 +5,7 @@ module Photo
       secret = photo['secret']
       farm_id = photo['farm']
       server_id = photo['server']
-      "https://farm#{farm_id}.staticflickr.com/#{server_id}/#{id}_#{secret}.jpg"
+      "https://farm#{farm_id}.staticflickr.com/#{server_id}/#{id}_#{secret}_m.jpg"
     end
   end
 end
