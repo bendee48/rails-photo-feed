@@ -1,5 +1,5 @@
 <h1>Photo Feed</h1>
-<p>Enter your Flickr id to see your public photos.</p>
+<p>Enter your Flickr ID to see your public photos.</p>
 <%= form_with url: root_path, method: :get, local: true do |f| %>
   <%= f.label 'flickr-id', 'Flickr ID' %>
   <%= f.text_field 'flickr-id' %>
