@@ -1,8 +1,4 @@
-# require_relative '../models/photos'
-
 class StaticPagesController < ApplicationController
-  # include Photo
-
   def index
     flickr = Flickr.new ENV['photo_feed_key'], ENV['photo_feed_secret']
 
