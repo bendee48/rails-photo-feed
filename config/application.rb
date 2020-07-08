@@ -18,5 +18,7 @@ module PhotoFeed
 
     # Wasn't loading custom modules from model #fix
     config.autoloader = :classic
+
+    config.autoload_paths += %W(#{config.root}/app/models)
   end
 end
